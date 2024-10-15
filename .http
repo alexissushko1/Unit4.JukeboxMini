@@ -1,0 +1,19 @@
+@host = http://localhost:3000
+
+### Get all users
+
+GET {{host}}/users
+
+### Get specific user
+
+GET {{host}}/users/2
+
+### Post a reservation with a specific id
+
+POST {{host}}/users/2/playlists
+Content-Type: application/json
+
+{
+  "name": "Sample Playlist",
+   "description": "Sample Description"
+}
